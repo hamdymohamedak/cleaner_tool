@@ -13,7 +13,16 @@ fn main() {
     if let Err(err) = remove_empty_directories(path_dir) {
         println!("Error: {}", err);
     } else {
+        println!(r"
+        _____    ___________                       .___            
+        /  _  \  /   _____/  | _______    ____    __| _/___________ 
+       /  /_\  \ \_____  \|  |/ /\__  \  /    \  / __ |/ __ \_  __ \
+      /    |    \/        \    <  / __ \|   |  \/ /_/ \  ___/|  | \/
+      \____|__  /_______  /__|_ \(____  /___|  /\____ |\___  >__|   
+              \/        \/     \/     \/     \/      \/    \/       
+        ");
         println!("Empty directories removed successfully.");
+        
     }
 }
 
